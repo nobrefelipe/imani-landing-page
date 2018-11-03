@@ -1,0 +1,87 @@
+.social-media-avatar{
+
+  width: 180px;
+
+  color: $grey;
+
+  text-decoration: none;
+
+  scroll-snap-align: start;
+
+  padding: 20px;
+
+  margin: 10px;
+
+  border-radius: 5px;
+
+
+  figure{
+
+    width: 110px;
+
+    height: 110px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    margin: 0 0 15px 0;
+
+  }
+
+  h4{
+
+    margin: 0 0 5px 0;
+
+    line-height: 17px;
+
+  }
+
+  span{
+
+    font-weight: 300;
+
+    color: $main-color
+
+  }
+
+  @include mobile{
+
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+
+    width: 40vw;
+
+  }
+
+}
+
+
+.horizontal-scroll{
+
+  display: flex;
+
+  overflow-x: scroll;
+
+  scroll-snap-type: x proximity;
+
+  margin: 10px 0 40px 0;
+
+
+  .fake-block{
+
+    float:left;
+
+    width: 10px;
+
+    height: 10px;
+
+    box-shadow: none !important;
+
+    margin:0;
+
+    padding: 5px;
+
+    &:after{display: none;}
+
+  }
+}

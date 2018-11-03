@@ -1,0 +1,188 @@
+@import "breakpoints";
+@import "flexy-layout";
+@import "typography";
+@import "social-media-avatar";
+@import "recent-trip";
+@import "reviews";
+@import "whats-about";
+@import "partners";
+@import "hero";
+
+*{box-sizing: border-box;}
+
+
+body{
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+/********************************* VARIABLES *********************************/
+
+$max-width: 1024px;
+$grey: #4A4A4A;
+$main-color: #FF4E50;
+
+
+body{
+
+  --main-color: #FF4E50;
+
+}
+
+
+/********************************* GLOBAL *********************************/
+
+//wrapper
+.wrapper{
+
+  width: 100%;
+
+  max-width: $max-width;
+
+  padding: 0 20px;
+
+  margin: 0 auto;
+
+}
+
+//cover image
+.image-cover{
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: 50% 50%;
+
+  margin: 0;
+
+  display: block;
+
+}
+
+// row
+.row{
+
+  float: left;
+
+  width: 100%;
+
+  padding: 40px 0;
+
+  @include mobile{
+
+    padding: 20px 0;
+
+  }
+
+}
+
+// button
+.button{
+
+  float: left;
+
+  background: $main-color;
+
+  color: #fff;
+
+  padding: 10px 35px;
+
+  height: 60px;
+
+  text-align: center;
+
+  transition: all .3s ease-in;
+
+  font-size: 18px;
+
+  border: 1px solid $main-color;
+
+
+  &:hover{
+
+    box-shadow: 0 0 0 300px rgba(0,0,0,0.2) inset;
+
+  }
+
+}
+
+// logo
+.logo{
+
+  margin: 15px 0;
+
+  text-align: center;
+
+  a{
+
+    font-size: 20px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+  }
+
+
+}
+
+
+/********************************* FORM *********************************/
+
+form{
+
+  width: 100%;
+
+  max-width: 700px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  [type="email"]{
+
+    float: left;
+
+    padding: 10px 15px;
+
+    font-size: 18px;
+
+    border: 1px solid #D4D4D4;
+
+    height: 60px;
+
+    margin-right: 20px;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    flex: 1;
+
+
+  }
+
+  @include mobile{
+
+    flex-flow: column;
+
+    [type="email"]{
+
+      text-align: center;
+
+      margin: 0 0 5px 0;
+    }
+
+  }
+
+
+}
+
+.success-message{color: #2f2;}
+

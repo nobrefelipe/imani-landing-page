@@ -1,0 +1,35 @@
+.partners{
+
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    top:0;
+    content: '';
+    height: 100%;
+    width: 1px;
+    box-shadow: 0 0 10px 10px rgba(255,255,255,0.8);
+
+  }
+
+  &:before{left: -1px;}
+
+  &:after{right: -1px;}
+
+
+
+  @include mobile{
+
+
+    .wrapper{
+
+      overflow-y: scroll;
+
+      padding: 0;
+
+    }
+
+  }
+
+}

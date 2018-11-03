@@ -1,0 +1,99 @@
+
+/********************************* TYPOGRAPHY *********************************/
+
+body{
+
+  color: $grey;
+
+  font-size: 16px;
+
+  line-height: 26px;
+
+  font-family: 'Roboto', sans-serif;
+
+}
+
+p{
+
+  font-weight: 300;
+
+  &.text-big{
+
+    font-size: 26px;
+
+    line-height: 30px;
+
+    @include mobile{
+
+      font-size: 18px;
+
+      line-height: 28px;
+
+    }
+
+    @include iphone5{
+
+      font-size: 14px;
+
+      line-height: 22px;
+
+
+    }
+
+  }
+
+}
+
+h1,h2,h3,h4,h5,h6{margin-top: 0;}
+
+h1{
+
+
+  font-size: 45px;
+
+  line-height: 55px;
+
+  @include mobile{
+
+    font-size: 30px;
+
+    line-height: 40px;
+
+  }
+
+  @include iphone5{
+
+    font-size: 30px;
+
+    line-height: 35px;
+
+  }
+
+}
+
+h2{
+
+
+}
+
+h3{
+
+
+}
+
+h4{
+
+
+}
+
+h5{
+
+
+
+}
+
+h6{
+
+
+
+}
